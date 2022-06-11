@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>WEBMARK SOLUTIONS HTML</title>
+        <!--CSS-->
+        <link rel="stylesheet" href="css/styles.css">
+        
+    </head>
+
+    <body>
+
+        <!--Navbar-->
+ <nav class="navbar">
+     <h1 class="logo">WMS</h1>
+     <ul class="nav-links">
+         <li class="active"><a href="#"></a>Home</li>
+         <li><a href="#title"></a>About</li>
+         <li><a href="#"></a>Services</li>
+         <li><a href="#"></a>Contac us</li>
+
+     </ul>
+
+     <img  src="/img/hamburguer.png"  alt="" class="menu-btn">
+ </nav>
+
+        <header>
+            <div class="header-content">
+                <h2>WELCOME TO <span class="span-text-header">WEBMARK SOLUTIONS</span> </h2>
+                <!--<div class="line"></div>-->
+              <!---  <div class="contenedor">
+                    <div class="box">
+                        <div class="content">
+                            <a href="#" id="ctn" class="ctn">About us</a>
+
+                        </div>
+                    </div>
+                </div> -->
+                <a href="#" id="ctn" class="ctn"><span class="span-button"></span>About us</a>
+                <a href="#" id="ctn1" class="ctn"><span class="span-button2"></span>Our services</a>
+
+            </div>
+        </header>
+
+<!--Events-->
+<section>
+    <div class="title">
+        <h1>About us</h1>
+        <div class="line"></div>
+       <section class="section-about-us">
+        <div class="about-us">
+            <img src="img/our_mission.png" alt="">
+            <div class="txt-about">
+            <h3>Our Mission</h3>
+
+            </div>
+        <div class="line2"></div>
+
+        </div>
+        <div class="about-us">
+            <img src="img/our_vision.png" alt="">
+            <h3 class="txt-about">Our Vision</h3>
+        <div class="line3"></div>
+
+        </div>
+        <div class="about-us">
+            <img src="img/our_values.png" alt="">
+            <h3 class="txt-about">Our Values</h3>
+        <div class="line4"></div>
+
+        </div>
+        </section>
+
+    </div>
+</section>
+
+
+<!--SERVICES-->
+<section>
+
+    <div class="title">
+     <h1>Our Services</h1>
+     <div class="line"></div>
+
+
+     <div class="contenedor1">
+        <div class="box">
+        <span></span>
+         <div class="content">
+            <h2>Create a design for your company, group or business</h2>
+            <p>Entrust our staff to create a unique, 
+                eye-catching and minimalist design for 
+                your company, group or business.
+
+            </p>
+            <a href="#" >Order now</a>
+             </div>
+             </div>
+
+
+             <div class="box">
+                <span></span>
+                 <div class="content">
+                    <h2>Website for your business</h2>
+                    <p>Entrust our staff with the development
+                         of a website in your own way, style, 
+                         as you and your business like it.
+                    </p>
+                    <a href="#" >Order now</a>
+                     </div>
+                     </div>
+
+
+                     <div class="box">
+                        <span></span>
+                         <div class="content">
+                            <h2>Digital marketing</h2>
+                            <p>Entrust our staff to create 
+                                a unique, eye-catching and minimalist 
+                                design for your company, group or business.
+
+                            </p>
+                            <a href="#" >Order now</a>
+                             </div>
+                             </div>
+     </div>
+
+     </div>
+</section>
+
+
+
+
+
+ <script>
+     const menuBtn=document.querySelector('.menu-btn')
+     const navlinks= document.querySelector('.nav-links')
+     menuBtn.addEventListener('click',()=>{
+        navlinks.classList.toggle('mobile-menu')
+     })
+ </script>
+
+ <script src="js/utils.js"></script>
+
+    </body>
+
+</html>
