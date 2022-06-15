@@ -88,18 +88,20 @@ margin-bottom: 40px;
 
 .ctn{
     align-items: center;
-    
+    color: white;
     padding: 2.5vmin 10vmin;
     margin-left: 10px;
     background: linear-gradient(111.56deg, rgba(144, 141, 147, 0.3) -2.6%, rgba(53, 83, 100, 0.225) 89.17%, rgba(53, 83, 100, 0.3) 96.27%);
-    opacity: 0.9;
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(171, 171, 171, 0.1);
+    backdrop-filter: blur(5px);
     box-shadow: 5px 6px 20px rgba(0, 0, 0, 0.15);
-    backdrop-filter: blur(100px);
+    
     /* Note: backdrop-filter has minimal browser support */
     border-radius: 50px;
     position: relative;
     overflow: hidden;
+    cursor: pointer;
+    transition: 0.7s;
 }
 
 
@@ -108,30 +110,51 @@ margin-bottom: 40px;
     margin-left: 0;
     background: #32ACBA;
     height: 100%;
+    opacity: 0;
+    backdrop-filter: blur(100px);
     width: 0;
-    box-shadow: 0px 0px 20px #31AABB;
+    box-shadow: 0px 0px 27px #31AABB;
     border-radius: 50px;
     position: absolute;
-    left: 0;
+    left: 50%;
     bottom:0;
     z-index: -1;
     transition: 0.85s;
 }
 
 .ctn:hover .span-button{
+    border: 1px solid rgba(171, 171, 171, 0.1);
+    opacity:1;
     width: 100%;
+    left: 0;
+    z-index: -1;
+
 
 }
+
+.ctn:hover{
+    box-shadow: 0px 0px 25px #31AABB;
+    border: rgb(84, 81, 81);
+    text-decoration:none;
+
+}
+
+
+
 
 .span-button2{
     margin-left: 0;
     height: 100%;
     width: 0;
+    opacity: 0;
     background: rgba(54, 201, 169, 0.9);
     box-shadow: 0px 0px 20px #36C9A9;
+    backdrop-filter: blur(100px);
+
+    opacity: 0;
     border-radius: 50px;
     position: absolute;
-    left: 0;
+    left: 50%;
     bottom:0;
     z-index: -1;
     transition: 0.85s;
@@ -139,6 +162,17 @@ margin-bottom: 40px;
 
 #ctn1:hover .span-button2{
     width: 100%;
+    left: 0;
+    opacity: 1;
+    z-index: -1;
+
+
+}
+
+#ctn1:hover{
+    box-shadow: 0px 0px 20px #36C9A9;
+    border: rgb(84, 81, 81);
+
 
 }
 
@@ -158,6 +192,8 @@ margin-bottom: 40px;
 .section{
     width: 80%;
     margin: 80px auto;
+    background-attachment:  fixed;
+
 }
 
 .title{
@@ -281,7 +317,7 @@ margin-bottom: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 40px 30px;
+    margin: 40px 50px;
     transition: 0.5s;
 }
 
