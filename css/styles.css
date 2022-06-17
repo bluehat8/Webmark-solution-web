@@ -237,8 +237,9 @@ margin-bottom: 40px;
 .txt-about{
     position:relative;
     width: 100%;
+    font-weight: 500 ;
+
     margin-top: -15%;
-    font-weight: 250 ;
     background:none;
     align-items: center;
     text-align: center;
@@ -247,6 +248,7 @@ margin-bottom: 40px;
 
 .txt-about h3{
     text-align: center;
+    font-weight: 500 ;
 
     
     background:none;
@@ -689,7 +691,7 @@ height: 100%;
     .txt-about{
         margin-top: -15%;
         width: 100%;
-        font-weight: 250 ;
+        font-weight: 500 ;
     }
 
 }
@@ -711,6 +713,7 @@ height: 100%;
     }
 
     .contact{
+    
     height: 150vh;
 
     }
